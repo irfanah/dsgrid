@@ -15,7 +15,18 @@ helpful when running Selenium tests in parallel.
 * Python
 * pip
 
-## Installation
+## Installation (Recommeded)
+
+Compatible working versions stored on Docker Registry.
+
+```bash
+# Note: you may have to use "sudo" if your linux user does not have proper permissions
+pip install dsgrid
+docker pull dsgrid/selenium-hub
+docker pull dsgrid/firefox-node
+```
+
+## Alternative Installation (New Installs)
 
 This installation will build the following Docker containers: Selenium Hub, PhantomJS, Chrome, and Firefox. Note: If you
 want to customize the Dockerfiles, do so in `/usr/local/dsgrid/files` before running the install.
